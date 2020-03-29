@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <%include ../views/partials/head%>
-  </head>
-  <body>
+<head>
+  <%include ../views/partials/head%>
+  <link rel="stylesheet" href="../stylesheets/service.css">
+  <script src="https://kit.fontawesome.com/7ead4bbf9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
     <%include ../views/partials/navbar%>
 
-    <header>
-      
+  <header>
+    <div class="headerImg">
+      <div class="moto">
+        <p>SERVICES</p>
+      </div>
+    </div>
+  </header>
 
-    </header>
-  </body>
+  <div class="service">
+    <div class="row">
+
+      <div class="col">
+        <div class="single-service">
+          <i class="fas fa-truck"></i>
+          <h3>Delivery</h3>
+          <p>Hermes will deliver your ingredients right to your door!</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="single-service">
+          <i class="fas fa-truck"></i>
+          <h3>Customize</h3>
+          <p>By answering a few questions, Hermes will provide you with a personalized recipe!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
 </html>
