@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%include ../views/partials/head%>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+      <nav class="navbar bg-dark navbar-dark navbar-expand-lg navbar-light">
+        
+          <div class="navbar-brand" href="#">
+            <img src="https://cdn.discordapp.com/attachments/693506566900678676/693810333369892964/hermesshoe1.png" height="40" width="40">
+            <span class="nav-text"><i>Hermes</i></span>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/explore">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/delivery">Delivery</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <header>
+      <div class="headerImg">
+        <div class="moto">
+          <h1><%= title %></h1>
+        </div>
+        <button type="button" class="btn btn-lg btn-outline-warning">Start Today!</button>
+      </div>
+
+    </header>
+    <script src="script.js"></script>
   </body>
 </html>
