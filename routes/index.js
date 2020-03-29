@@ -4,25 +4,25 @@ var router = express.Router();
 // GET home page.
 router.get('/', function(req, res, next) 
 {
-  res.render('home', { title: 'HERMES'});
+  res.render('home');
 });
 
 // GET service page
-router.get('/service', function(req, res, next)
+router.get('/services', function(req, res, next)
 {
-  res.render('service', { title: 'Hermes'});
+  res.render('services');
 });
 
 // GET explore page
 router.get('/explore', function(req, res, next)
 {
-  res.render('explore', { title: 'Hermes'});
+  res.render('explore');
 });
 
 // GET delivery page
 router.get('/delivery', function(req, res, next)
 {
-  res.render('delivery', { title: 'Hermes'});
+  res.render('delivery');
 });
 
 module.exports = router;
