@@ -1,6 +1,9 @@
 const request = require('request');
 const fs = require('fs');
-const config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
+// const config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
+
+const appID = process.env.appID;
+const appKey = process.env.appKey;
 
 // Queries based on users preferences
 const query = 
@@ -32,7 +35,7 @@ const ingredientsTemplate =
 }
 
 // API used to retrieve data from recipes based on specified queries
-const apiURL = `https://api.edamam.com/search?q=${query.protein}&app_id=${config.appID}&app_key=${config.config.appKey}&
+const apiURL = `https://api.edamam.com/search?q=${query.protein}&app_id=${appID}&app_key=${appKey}&
 mealType=${query.mealType}&cuisineType=${query.cuisineType}&time=${query.time}&diet=${query.diet}&calories=${query.calories}&health=${query.health}`;
 
 request 
