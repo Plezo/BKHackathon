@@ -14,15 +14,15 @@ router.get('/services', function(req, res, next)
 });
 
 // GET explore page
-router.get('/explore', function(req, res, next)
+router.get('/about', function(req, res, next)
 {
-  res.render('explore');
+  res.render('about');
 });
 
 // GET delivery page
-router.get('/delivery', function(req, res, next)
+router.get('/faq', function(req, res, next)
 {
-  res.render('delivery');
+  res.render('faq');
 });
 
 module.exports = router;
