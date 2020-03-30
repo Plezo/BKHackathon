@@ -25,4 +25,10 @@ router.get('/faq', function(req, res, next)
   res.render('faq');
 });
 
+// GET customize page
+router.get('/customize', function(req, res, next)
+{
+  res.render('customize');
+});
+
 module.exports = router;

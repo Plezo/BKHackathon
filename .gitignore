@@ -1,2 +1,4 @@
 /config.json
 node_modules
+/edamam.js
+/public/javascripts/customize.js

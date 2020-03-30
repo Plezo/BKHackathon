@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <%include ../views/partials/head%>
+      <script src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <link rel="stylesheet" href="../stylesheets/customize.css">
+   </head>
+   <body>
+      <%include ../views/partials/navbar%>
+
+      <header>
+         <div class="headerImg">
+            <div class="moto">
+               <p>MAKE IT!</p>
+            </div>
+         </div>
+      </header>
+      <div class="create">
+         <form class="form">
+            <div class="step">
+               <h3>Step One</h3>
+               <p>Choose your protein</p>
+               <input type="text" id="proteinType" name="fname" placeholder="i.e chicken, beef, pork, etc">
+            </div>
+            <div class="step">
+               <h3>Step Two</h3>
+               <p>Choose your diet type</p>
+               <input type="text" id="dietType" name="fname" placeholder="i.e keto, low protein, etc">
+            </div>
+            <div class="step">
+               <h3>Step Three</h3>
+               <p>Choose your health restriction</p>
+               <input type="text" id="healthType" name="fname" placeholder="i.e soy, no-meat, etc">
+            </div>
+            <div class="step">
+               <h3>Step Four</h3>
+               <p>Choose your protein</p>
+               <input type="text" id="cuisineType" name="fname" placeholder="i.e chinese, japanese, indian">
+            </div>
+         </form>
+         <button class="button">Submit</button>
+      </div>
+   </body>
+</html>
